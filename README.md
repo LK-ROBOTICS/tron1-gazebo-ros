@@ -75,12 +75,13 @@ You can create an algorithm development workspace by following these steps:
     ├── PF_TRON1A
     ├── SF_TRON1A
     └── WF_TRON1A
+    WF_TRON1B
     ```
 
   - TakingPF_P441C (please replace it according to the actual robot type) as an example, set the robot model type:
 
     ```
-    echo 'export ROBOT_TYPE=PF_P441C' >> ~/.bashrc && source ~/.bashrc
+    echo 'export ROBOT_TYPE=WF_TRON1B' >> ~/.bashrc && source ~/.bashrc
     ```
 
 - Run the simulation: You can set the use_support parameter of the empty_world.launch.py file to true, and execute the following Shell command to run the simulation:
