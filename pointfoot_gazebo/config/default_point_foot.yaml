@@ -2,7 +2,8 @@ gazebo:
   delay: 0.009
   imus:
     limx_imu:
-      frame_id: limx_imu
+      # frame_id: limx_imu
+      frame_id: imu_Link
       orientation_covariance_diagonal: [ 0.0012, 0.0012, 0.0012 ]
       angular_velocity_covariance: [ 0.0004, 0.0004, 0.0004 ]
       linear_acceleration_covariance: [ 0.01, 0.01, 0.01 ]

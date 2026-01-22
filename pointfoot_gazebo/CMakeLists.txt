@@ -78,3 +78,9 @@ install(FILES pointfoot_hw_sim_plugins.xml
 install(DIRECTORY config launch worlds assets
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
         )
+
+# Python scripts
+catkin_install_python(PROGRAMS
+        scripts/livox_msg_relay.py
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+        )

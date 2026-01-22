@@ -13,6 +13,9 @@
     <depend>hardware_interface</depend>
     <depend>realtime_tools</depend>
     <depend>limxsdk_sim</depend>
+    <depend>rospy</depend>
+    <depend>livox_laser_simulation</depend>
+    <depend>livox_ros_driver2</depend>
     <export>
         <gazebo_ros_control plugin="${prefix}/pointfoot_hw_sim_plugins.xml"/>
         <gazebo_ros gazebo_model_path="${prefix}/.."/>

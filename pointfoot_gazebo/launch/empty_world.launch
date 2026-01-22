@@ -7,11 +7,20 @@
     <!-- use_gazebo:=true to ensure ros_control plugin gets injected -->
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find robot_description)/pointfoot/$(env ROBOT_TYPE)/xacro/robot.xacro use_gazebo:=true"/>
 
-    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+
+    <!-- 빈 월드 실행 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find pointfoot_gazebo)/worlds/mixed_terrain.world"/>
+        <arg name="world_name" value="$(find pointfoot_gazebo)/worlds/test3.world"/>
         <arg name="paused" value="false"/>
     </include>
+
+    <!-- Two Floor Test World -->
+    <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find pointfoot_gazebo)/worlds/two_floor_test.world"/>
+        <arg name="paused" value="false"/>
+        <env name="GAZEBO_USER_RESOURCE_PATH" value="$(find pointfoot_gazebo)/assets" />
+        <env name="GAZEBO_MODEL_PATH" value="$(find pointfoot_gazebo)/assets/real2sim" />
+    </include> -->
 
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" clear_params="true"
@@ -35,4 +44,15 @@
 
     <!-- Start the joint state publisher to publish the robot's joint state information -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <!-- Livox CustomMsg relay: livox_laser_simulation -> livox_ros_driver2 -->
+    <node name="livox_msg_relay" pkg="pointfoot_gazebo" type="livox_msg_relay.py" output="screen">
+        <param name="input_topic" value="/livox/lidar_sim"/>
+        <param name="output_topic" value="/livox/lidar"/>
+    </node>
+
+    <!-- body -> base_Link TF (Localization이 map->body 발행, URDF는 base_Link 기준) -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="body_to_base_link"
+          args="0 0 -0.178 0 0 0 body base_Link" />
+
 </launch>

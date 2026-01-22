@@ -20,4 +20,10 @@
           -urdf
           -z 0.82
           -model point_foot_robot" output="screen"/>
+
+    <!-- Livox CustomMsg relay: livox_laser_simulation -> livox_ros_driver2 -->
+    <node name="livox_msg_relay" pkg="pointfoot_gazebo" type="livox_msg_relay.py" output="screen">
+        <param name="input_topic" value="/livox/lidar_sim"/>
+        <param name="output_topic" value="/livox/lidar"/>
+    </node>
 </launch>
