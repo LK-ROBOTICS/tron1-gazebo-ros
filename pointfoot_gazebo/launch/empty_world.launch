@@ -10,8 +10,9 @@
 
     <!-- 빈 월드 실행 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find pointfoot_gazebo)/worlds/test3.world"/>
+        <arg name="world_name" value="$(find pointfoot_gazebo)/worlds/test4.world"/>
         <arg name="paused" value="false"/>
+        <env name="GAZEBO_MODEL_PATH" value="$(find pointfoot_gazebo)/models:$(find pointfoot_gazebo)/assets/real2sim" />
     </include>
 
     <!-- Two Floor Test World -->

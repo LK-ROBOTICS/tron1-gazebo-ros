@@ -827,7 +827,7 @@
     </scene>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-6.21286 0.663082 10.1624 0 0.813796 0.456786</pose>
+        <pose>0.122342 -4.10846 9.30793 0 0.777796 1.0376</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -2017,10 +2017,10 @@
       </link>
     </model>
     <state world_name='two_floor_test'>
-      <sim_time>643 10000000</sim_time>
-      <real_time>132 855010215</real_time>
-      <wall_time>1769676351 635191755</wall_time>
-      <iterations>41622</iterations>
+      <sim_time>661 124000000</sim_time>
+      <real_time>39 356393627</real_time>
+      <wall_time>1769677038 61254970</wall_time>
+      <iterations>9057</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2092,20 +2092,20 @@
         </link>
       </model>
       <model name='person_anna'>
-        <pose>2.38868 -1.50002 0.727209 0 -0 -3.13145</pose>
+        <pose>2.54454 2.56735 0.722326 0 -0 3.06274</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.38868 -1.50002 0.727209 0 -0 -3.13145</pose>
+          <pose>2.54454 2.56735 0.722326 0 -0 3.06274</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='person_luca'>
-        <pose>2.4398 2.24735 0.749213 0 -0 3.06088</pose>
+        <pose>2.47141 -1.4008 0.755595 0 0 -2.94665</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.4398 2.24735 0.749213 0 -0 3.06088</pose>
+          <pose>2.47141 -1.4008 0.755595 0 0 -2.94665</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2142,70 +2142,70 @@
         </link>
       </model>
       <model name='second_floor'>
-        <pose>5.19898 0 0.375 0 -0 0</pose>
+        <pose>5.12928 0.016362 0.375 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>5.19898 0 0.375 0 -0 0</pose>
+          <pose>5.12928 0.016362 0.375 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='stair_step_1'>
-        <pose>0.865636 -1.50044 0.075 0 -0 0</pose>
+        <pose>0.851875 -1.5007 0.075 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.865636 -1.50044 0.075 0 -0 0</pose>
+          <pose>0.851875 -1.5007 0.075 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='stair_step_2'>
-        <pose>1.14738 -1.5 0.15 0 -0 0</pose>
+        <pose>1.13089 -1.50072 0.15 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.14738 -1.5 0.15 0 -0 0</pose>
+          <pose>1.13089 -1.50072 0.15 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='stair_step_3'>
-        <pose>1.44603 -1.5 0.225 0 -0 0</pose>
+        <pose>1.40821 -1.49927 0.225 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.44603 -1.5 0.225 0 -0 0</pose>
+          <pose>1.40821 -1.49927 0.225 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='stair_step_4'>
-        <pose>1.7549 -1.4988 0.3 0 -0 0</pose>
+        <pose>1.70313 -1.49583 0.3 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.7549 -1.4988 0.3 0 -0 0</pose>
+          <pose>1.70313 -1.49583 0.3 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='stair_step_5'>
-        <pose>2.05374 -1.49882 0.375 0 -0 0</pose>
+        <pose>1.99464 -1.5 0.375 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.05374 -1.49882 0.375 0 -0 0</pose>
+          <pose>1.99464 -1.5 0.375 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wall_ramp'>
-        <pose>2.30626 5.05536 0.5 0 -0 0</pose>
+        <pose>2.22962 5.02219 0.5 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.30626 5.05536 0.5 0 -0 0</pose>
+          <pose>2.22962 5.02219 0.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2222,10 +2222,10 @@
         </link>
       </model>
       <model name='wall_ramp_clone_0'>
-        <pose>8.05217 2.9744 1.2247 0 -0 0</pose>
+        <pose>8.04575 2.97356 1.26028 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>8.05217 2.9744 1.2247 0 -0 0</pose>
+          <pose>8.04575 2.97356 1.26028 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2442,10 +2442,10 @@
         </link>
       </model>
       <model name='wall_stairs'>
-        <pose>1.5 -4.3782 0.5 0 -0 0</pose>
+        <pose>1.21103 -3.9499 0.5 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.5 -4.3782 0.5 0 -0 0</pose>
+          <pose>1.21103 -3.9499 0.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2502,10 +2502,10 @@
         </link>
       </model>
       <model name='wall_stairs_clone_4'>
-        <pose>3.85826 -3.93843 1.23793 0 -0 0</pose>
+        <pose>3.85826 -3.93843 1.26071 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.85826 -3.93843 1.23793 0 -0 0</pose>
+          <pose>3.85826 -3.93843 1.26071 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
